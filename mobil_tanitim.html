@@ -3,95 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ders Planım - Mobil Uygulama</title>
+    <title>Ders Planım | Mobil Uygulama</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 18px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        article, aside {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        section {
+            margin-top: 35px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background: #1e40af;
+            color: white;
+            padding: 14px;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background: #eff6ff;
+        }
+
+        aside {
+            border-left: 5px solid #2563eb;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            article, aside {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Ders Planım</h1>
-        <p>Üniversite öğrencileri için mobil ders planlama uygulaması</p>
-    </header>
+<header>
+    <h1>📚 Ders Planım</h1>
+    <p>Üniversite hayatını daha düzenli ve kolay hale getir.</p>
+</header>
 
-    <nav>
-        <a href="#hakkinda">Hakkında</a> |
-        <a href="#ozellikler">Özellikler</a> |
-        <a href="#dersler">Ders Programı</a> |
-        <a href="#iletisim">İletişim</a>
-    </nav>
+<nav>
+    <a href="#hakkinda">Hakkında</a>
+    <a href="#ozellikler">Özellikler</a>
+    <a href="#dersler">Ders Programı</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
 
-    <main>
+<main>
 
-        <article id="hakkinda">
-            <h2>Uygulama Hakkında</h2>
+    <article id="hakkinda">
 
-            <p>
-                Ders Planım, üniversite öğrencilerinin ders programlarını,
-                ödevlerini ve sınav tarihlerini daha kolay takip edebilmesi
-                amacıyla geliştirilmiş bir mobil uygulamadır.
-            </p>
+        <h2>Ders Planım Nedir?</h2>
 
-            <section id="ozellikler">
-                <h3>Uygulamanın Özellikleri</h3>
+        <p>
+            Ders Planım, üniversite öğrencilerinin ders programlarını,
+            sınav tarihlerini, ödevlerini ve projelerini tek bir yerden
+            takip edebilmesi için tasarlanmış bir mobil uygulamadır.
+        </p>
 
-                <ul>
-                    <li>Haftalık ders programını görüntüleme</li>
-                    <li>Sınav tarihlerini takip etme</li>
-                    <li>Ödev ve proje hatırlatıcıları oluşturma</li>
-                    <li>Ders bilgilerini kaydetme</li>
-                    <li>Yaklaşan görevleri görüntüleme</li>
-                </ul>
-            </section>
+        <section id="ozellikler">
 
-            <section id="dersler">
-                <h3>Örnek Ders Programı</h3>
+            <h3>Uygulamanın Özellikleri</h3>
 
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Gün</th>
-                            <th>Ders</th>
-                            <th>Saat</th>
-                        </tr>
-                    </thead>
+            <ul>
+                <li>Haftalık ders programını görüntüleme</li>
+                <li>Sınav tarihlerini takip etme</li>
+                <li>Ödev ve proje hatırlatıcıları oluşturma</li>
+                <li>Ders bilgilerini düzenli şekilde kaydetme</li>
+                <li>Yaklaşan görevleri görüntüleme</li>
+                <li>Mobil cihazlardan kolay kullanım</li>
+            </ul>
 
-                    <tbody>
-                        <tr>
-                            <td>Pazartesi</td>
-                            <td>Veritabanı Yönetim Sistemleri</td>
-                            <td>09:00 - 11:00</td>
-                        </tr>
+        </section>
 
-                        <tr>
-                            <td>Salı</td>
-                            <td>Web Programlama</td>
-                            <td>13:00 - 15:00</td>
-                        </tr>
+        <section id="dersler">
 
-                        <tr>
-                            <td>Çarşamba</td>
-                            <td>Yazılım Mühendisliği</td>
-                            <td>10:00 - 12:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <h3>Örnek Haftalık Ders Programı</h3>
 
-        </article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gün</th>
+                        <th>Ders</th>
+                        <th>Saat</th>
+                    </tr>
+                </thead>
 
-        <aside>
-            <h3>Yaklaşan Hatırlatma</h3>
-            <p>
-                Veritabanı Yönetim Sistemleri ödevini teslim etmeyi unutma!
-            </p>
-        </aside>
+                <tbody>
+                    <tr>
+                        <td>Pazartesi</td>
+                        <td>Veritabanı Yönetim Sistemleri</td>
+                        <td>09:00 - 11:00</td>
+                    </tr>
 
-    </main>
+                    <tr>
+                        <td>Salı</td>
+                        <td>Web Programlama</td>
+                        <td>13:00 - 15:00</td>
+                    </tr>
 
-    <footer id="iletisim">
-        <p>Ders Planım Mobil Uygulaması</p>
-        <p>2026 - Tüm Hakları Saklıdır.</p>
-    </footer>
+                    <tr>
+                        <td>Çarşamba</td>
+                        <td>Yazılım Mühendisliği</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Perşembe</td>
+                        <td>Bilgisayar Ağları</td>
+                        <td>14:00 - 16:00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </article>
+
+    <aside>
+        <h3>🔔 Yaklaşan Hatırlatma</h3>
+        <p>
+            Veritabanı Yönetim Sistemleri ödevinin teslim tarihini
+            kontrol etmeyi unutma.
+        </p>
+    </aside>
+
+</main>
+
+<footer id="iletisim">
+    <p><strong>Ders Planım</strong></p>
+    <p>Üniversite Öğrencileri İçin Mobil Planlama Uygulaması</p>
+    <p>© 2026 Tüm Hakları Saklıdır.</p>
+</footer>
 
 </body>
 </html>
